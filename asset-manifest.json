@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/tp/static/css/main.47be3c00.css",
-    "main.js": "/tp/static/js/main.cb28263c.js",
-    "index.html": "/tp/index.html",
-    "main.47be3c00.css.map": "/tp/static/css/main.47be3c00.css.map",
-    "main.cb28263c.js.map": "/tp/static/js/main.cb28263c.js.map"
+    "main.css": "/detergent-main/static/css/main.47be3c00.css",
+    "main.js": "/detergent-main/static/js/main.cb28263c.js",
+    "index.html": "/detergent-main/index.html",
+    "main.47be3c00.css.map": "/detergent-main/static/css/main.47be3c00.css.map",
+    "main.cb28263c.js.map": "/detergent-main/static/js/main.cb28263c.js.map"
   },
   "entrypoints": [
     "static/css/main.47be3c00.css",
