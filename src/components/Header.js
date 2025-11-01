@@ -74,7 +74,7 @@ const Header = () => {
               onClick={() => setMobileDrawer(false)}
             >
               <img
-                src="/images/logo.png"
+                src="images/logo.png"
                 alt="Ghar Logo"
                 style={{
                   height: '45px',
