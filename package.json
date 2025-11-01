@@ -1,7 +1,7 @@
 {
   "name": "sparkle-clean-detergent",
   "version": "1.0.0",
-  "private": true,
+  "homepage": "https://adityakumar101.github.io/tp",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -20,6 +20,8 @@
     "start-global": "HOST=0.0.0.0 PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "browserslist": {
@@ -33,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
