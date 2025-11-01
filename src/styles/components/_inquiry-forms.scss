@@ -1,0 +1,232 @@
+// Wrap all existing inquiry forms styles in a parent class
+.inquiry-forms-wrapper {
+  // Modal Styles
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  @keyframes modalSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .modal-content h2 {
+    background: linear-gradient(135deg, #1a3a6a, #2c5aa0);
+    color: white;
+    padding: 1.5rem 2rem;
+    margin: 0;
+    border-radius: 12px 12px 0 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .close {
+    color: white;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    margin-top: -5px;
+    transition: color 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  .close:hover {
+    color: #ff6b35;
+  }
+
+  /* Form Styles */
+  form {
+    padding: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1a3a6a;
+    font-size: 0.95rem;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #eaeaea;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #2c5aa0;
+    box-shadow: 0 0 0 3px rgba(42, 90, 160, 0.1);
+  }
+
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border-color: #c0c0c0;
+  }
+
+  select {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .submit-btn {
+    background: linear-gradient(135deg, #ff6b35, #e55a2b);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
+    background: linear-gradient(135deg, #e55a2b, #cc4a23);
+  }
+
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+
+  /* Form validation styles */
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border-color: #ff6b6b;
+  }
+
+  input:valid,
+  select:valid,
+  textarea:valid {
+    border-color: #51cf66;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .modal-content {
+      margin: 10% auto;
+      width: 95%;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .modal-content h2 {
+      padding: 1rem 1.5rem;
+      font-size: 1.3rem;
+    }
+
+    form {
+      padding: 1.5rem;
+    }
+
+    .close {
+      right: 15px;
+      top: 10px;
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .modal-content {
+      margin: 5% auto;
+      width: 98%;
+    }
+
+    form {
+      padding: 1rem;
+    }
+
+    .modal-content h2 {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 10px 12px;
+    }
+
+    .submit-btn {
+      padding: 12px 30px;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,308 @@
+// Import component styles
+@import "components/header";
+@import "components/inquiry-forms";
+
+// Global styles that don't conflict
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+// Variables
+$primary-color: #1a3a6a;
+$secondary-color: #2c5aa0;
+$accent-color: #ff6b35;
+$text-color: #333;
+$light-bg: #f8fafc;
+$white: #ffffff;
+
+// Global Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background: $white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Header Styles
+.header-wrapper {
+  .appBar {
+    background-color: $primary-color !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1) !important;
+    z-index: 1000 !important; // Ensure navbar is on top
+    position: fixed !important;
+    top: 0 !important;
+  }
+
+  .logo {
+    font-weight: bold !important;
+    color: $white !important;
+    text-decoration: none !important;
+
+    span {
+      color: $accent-color !important;
+    }
+  }
+
+  .navButton {
+    color: $white !important;
+    font-weight: 500 !important;
+    margin: 0 8px !important;
+    text-transform: none !important;
+    font-size: 0.95rem !important;
+    position: relative;
+    text-decoration: none !important;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      color: $accent-color !important;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 8px;
+      left: 50%;
+      background-color: $accent-color;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after {
+      width: 80%;
+    }
+
+    &.active {
+      color: $accent-color !important;
+
+      &::after {
+        width: 80% !important;
+      }
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+      .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .dropdown-arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .dropdown-arrow {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+    margin-left: 2px;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $white;
+    min-width: 250px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    list-style: none;
+    z-index: 1000;
+    border: 1px solid #eaeaea;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-menu li {
+    margin: 0;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: $text-color;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    background: none;
+    width: 100%;
+    text-align: left;
+
+    &:hover {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      color: $primary-color;
+      padding-left: 25px;
+      border-left-color: $accent-color;
+    }
+  }
+
+  .mobileDrawer {
+    .MuiDrawer-paper {
+      width: 280px;
+      background-color: $primary-color !important;
+      color: $white !important;
+    }
+  }
+
+  .mobileMenuItem {
+    color: $white !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    text-decoration: none !important;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+  }
+
+  .closeButton {
+    color: $white !important;
+  }
+}
+
+// Add other component styles here...
+// Footer Styles
+.footer-wrapper {
+  .footer {
+    background: #0d2b4e;
+    color: $white;
+    padding: 60px 0 20px;
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-section {
+      h3 {
+        color: $accent-color;
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 0.8rem;
+        }
+
+        a {
+          color: rgba(255, 255, 255, 0.8);
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+// Responsive footer
+@media (max-width: 768px) {
+  .footer-wrapper {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+  }
+}
+.slogan-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.slogan-tagline {
+  font-size: 2.5rem;
+  color: #1a3a6a;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #1a3a6a, #ff6b35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slogan-meaning {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .slogan-tagline {
+    font-size: 2rem;
+  }
+
+  .slogan-meaning {
+    font-size: 1rem;
+  }
+}
