@@ -18,6 +18,7 @@ import {
   KeyboardArrowDown,
   Close
 } from '@mui/icons-material';
+import { Logo } from '../assets/images';
 // REMOVE this: import './Header.css';
 
 const Header = () => {
@@ -74,14 +75,14 @@ const Header = () => {
               onClick={() => setMobileDrawer(false)}
             >
               <img
-                src="images/logo.png"
+                src={Logo}
                 alt="Ghar Logo"
                 style={{
                   height: '45px',
                   width: '45px',
                   borderRadius: '50%',
                   objectFit: 'cover',
-                  border: '2px solid #ff6b35',
+                  // border: '2px solid #ff6b35',
                   padding: '2px',
                   backgroundColor: 'white'
                 }}

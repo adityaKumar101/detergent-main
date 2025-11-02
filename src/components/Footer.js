@@ -7,27 +7,42 @@ const Footer = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
-              <h3>Ghar</h3>
-              <p>Premium detergent powder for brighter, cleaner clothes and a happier home.</p>
+              <h3>Thrive and Prosper private limited</h3>
+              <ul>
+                {/* <li>Email: info@ghar.com</li> */}
+                <li>Address: Kanpur</li>
+                <li>Phone: +91 8368767269</li>
+              </ul>
             </div>
             <div className="footer-section">
-              <h3>Quick Links</h3>
+              <h3>Useful Links</h3>
               <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-to-use">How to Use</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Social Activities</a></li>
+
               </ul>
             </div>
             <div className="footer-section">
-              <h3>Contact Us</h3>
-              <ul>
-                <li>Email: info@ghar.com</li>
-                <li>Phone: (555) 123-4567</li>
-                <li>Address: 123 Clean Street, Fresh City</li>
-              </ul>
+
+              <h3>Contact with Us</h3>
+              <div className="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                  <i className="fab fa-youtube"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                  <i className="fab fa-twitter"></i>
+                </a>
+              </div>
             </div>
           </div>
+
           <div className="footer-bottom">
             <p>&copy; 2024 Thrive and Prosper private limited . All rights reserved.</p>
           </div>

@@ -253,6 +253,36 @@ body {
           }
         }
       }
+      .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-links a {
+        color: #ff6b35;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        color: #0077b5; /* LinkedIn blue */
+      }
+
+      /* If using icons */
+      .social-links i {
+        font-size: 24px;
+      }
+
+      .social-links a:hover .fa-linkedin {
+        color: #0077b5;
+      }
+      .social-links a:hover .fa-youtube {
+        color: #ff0000;
+      }
+      .social-links a:hover .fa-twitter {
+        color: #1da1f2;
+      }
     }
 
     .footer-bottom {
