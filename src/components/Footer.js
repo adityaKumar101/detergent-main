@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
             <div className="footer-section">
 
-              <h3>Contact with Us</h3>
+              <h3>Connect with Us</h3>
               <div className="social-links">
                 <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <i className="fab fa-linkedin"></i>
