@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/detergent-main/static/css/main.9c39fd22.css",
-    "main.js": "/detergent-main/static/js/main.24f0639d.js",
+    "main.css": "/detergent-main/static/css/main.0024dc90.css",
+    "main.js": "/detergent-main/static/js/main.eec72cde.js",
     "static/media/Image1.jpeg": "/detergent-main/static/media/Image1.926c29837863d9b94a99.jpeg",
     "static/media/logo.png": "/detergent-main/static/media/logo.9f8c9b74e6c87c2cd8ed.png",
     "static/media/Image5.jpeg": "/detergent-main/static/media/Image5.276ad1b4f2a7a9c5bca9.jpeg",
@@ -9,11 +9,11 @@
     "static/media/Image3.jpeg": "/detergent-main/static/media/Image3.129744ac0908d0206f5f.jpeg",
     "static/media/Image2.jpeg": "/detergent-main/static/media/Image2.bdf11f785418578e079f.jpeg",
     "index.html": "/detergent-main/index.html",
-    "main.9c39fd22.css.map": "/detergent-main/static/css/main.9c39fd22.css.map",
-    "main.24f0639d.js.map": "/detergent-main/static/js/main.24f0639d.js.map"
+    "main.0024dc90.css.map": "/detergent-main/static/css/main.0024dc90.css.map",
+    "main.eec72cde.js.map": "/detergent-main/static/js/main.eec72cde.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c39fd22.css",
-    "static/js/main.24f0639d.js"
+    "static/css/main.0024dc90.css",
+    "static/js/main.eec72cde.js"
   ]
 }
