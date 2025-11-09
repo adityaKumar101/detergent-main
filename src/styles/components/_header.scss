@@ -254,6 +254,22 @@
   font-size: 1.2rem;
   border: 2px solid #ff6b35;
 }
+.fixed-avatar {
+  height: 45px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 2px;
+  background-color: white;
+  position: fixed;
+  left: 50%;
+  top: 43px;
+  display: block;
+  z-index: 10000;
+  transition: transform 0.5s, width 0.2s linear, height 0.2s linear;
+  transform: translateX(-50%); /* centers horizontally */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
 
 /* Responsive logo sizing */
 @media (max-width: 768px) {
@@ -262,6 +278,12 @@
     height: 40px;
     width: 40px;
     font-size: 1.1rem;
+  }
+  .fixed-avatar {
+    height: 40px;
+    top: 12px;
+    width: auto;
+    transform: translateX(-50%); /* still centered on small screens */
   }
 }
 

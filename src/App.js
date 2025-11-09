@@ -1,11 +1,11 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Header from './components/Header';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import './styles/main.scss';
+import Contact from './components/ContactForm';
 
 // Create Material-UI theme
 const theme = createTheme({
@@ -31,8 +31,11 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/detergent-main" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact-us" element={<Contact />} />
+
           </Routes>
         </div>
       </Router>

@@ -42,6 +42,8 @@ const Header = () => {
     { label: 'About Us', path: '/about' },
     { label: 'Special Achievements', path: '/achievements' },
     { label: 'Career', path: '/career' },
+    { label: 'Contact Us', path: '/contact-us' },
+
   ];
 
   return (
@@ -76,16 +78,8 @@ const Header = () => {
             >
               <img
                 src={Logo}
-                alt="Ghar Logo"
-                style={{
-                  height: '45px',
-                  width: '45px',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  // border: '2px solid #ff6b35',
-                  padding: '2px',
-                  backgroundColor: 'white'
-                }}
+                alt="T&P"
+                className='fixed-avatar'
                 onError={(e) => {
                   // Fallback if image doesn't load
                   e.target.style.display = 'none';
@@ -131,7 +125,7 @@ const Header = () => {
                   className="navButton dropdown-toggle"
                   endIcon={<KeyboardArrowDown className="dropdown-arrow" />}
                 >
-                  Contact Us
+                  Distributor
                 </Button>
 
                 <ul className="dropdown-menu">
@@ -211,7 +205,7 @@ const Header = () => {
               <ListItemText
                 primary={
                   <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    Contact Us
+                    Distributor
                     <KeyboardArrowDown
                       sx={{
                         transform: mobileContactOpen ? 'rotate(180deg)' : 'rotate(0deg)',
